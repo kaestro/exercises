@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head lang="ko">
+    <head>
+        <title>Basic Functional Programming</title>
+    </head>
+    <body>
+        <script>
+            function cal(mode) {
+                var funcs = {
+                    'plus': function(left, right) {return left + right},
+                    'minus': function(left, right) {return left - right}
+                }
+                return funcs[mode];
+            }
+        </script>
+
+        call function named 'cal'<br>
+        You can use this in 2 ways:<br>
+        <ol>
+            <li>call 'plus' function by cal('plus')(arg0, arg1)</li>
+            <li>call 'minus' function by cal('minus')(arg0, arg1)</li>
+        </ol>
+    </body>
+</head>
